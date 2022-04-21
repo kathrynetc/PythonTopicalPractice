@@ -1,0 +1,11 @@
+name = input("What is your name? ")
+age = input("What is your age? ")
+
+age = int(age)
+
+print("Hello {}, your age is {}". format(name, age))
+
+if age>= 21:
+    print("You can buy an alcoholic beverage. Enjoy and thanks for shopping!")
+else:
+    print("Hey...wait a second! You can't buy a drink! Where's your ID?!?")
