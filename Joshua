@@ -1,0 +1,19 @@
+money = 50
+shopping_cart = []
+games = {"Solitaire": 5, "TicTacToe": 10, "Global Thermonuclear War": 100}
+
+while True:
+    if money<=0:
+        print("Would you like to play a game?")
+        break
+    else:
+            player_choice = input(f"Select a game{games}:").title()
+            if player_choice in games:
+                if money >= games[player_choice]:
+                    shopping_cart.append(player_choice)
+                    money -= games[player_choice]
+                    print(f"Shopping cart: {shopping_cart} \nMoney left: {money}")
+                else:
+                    print("Interesting game...the only winning move is not to play.")
+            else:
+                print("How about a nice game of chess?")
