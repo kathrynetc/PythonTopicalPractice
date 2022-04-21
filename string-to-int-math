@@ -1,0 +1,8 @@
+x_string = input(2)
+y_string = input(5)
+
+x = int(x_string)
+y = int(y_string)
+
+print("Sum: ", x+y)
+print("Difference")
