@@ -1,0 +1,14 @@
+servicePorts = {}
+service = port = "1"
+while service != "0" and port != "0":
+        service = input("Service the port!! Please enter a service's name or type '0' to stop: ")
+        if service == "0":
+                break
+
+        port = input("Service the port!! Please enter a port number or type '0' to stop: ")
+        if port == "0":
+                break
+
+        servicePorts[service] = port
+
+print(servicePorts)
