@@ -1,0 +1,23 @@
+#writing live a star wars game script that can be played via the python terminal
+
+credits = 5000
+knapsack = []
+options = {"Run": 15, "Talk": 10, "Fight": 20, "Dance": 30, "Play dead": 100, "Lightsaber": 200}
+
+while True:
+    if credits<=0:
+        print("Wise descision, young one.")
+        break
+    else:
+            player_choice = input(f"A jedi never admits defeat{options}:").title()
+            if player_choice in games:
+                if tokens >= games[player_choice]:
+                    action_taken.append(player_choice)
+                    credits -= option[player_choice]
+                    print(f"Action taken: {action_taken} \nCredits left: {credits}")
+                else:
+                    print("You don't know the power of the dark side.")
+            else:
+                print("I am a Jedi, like my father before me.")
+                
+                #in progress
