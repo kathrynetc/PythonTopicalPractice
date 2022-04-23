@@ -4,10 +4,10 @@ games = {"Solitaire": 5, "TicTacToe": 10, "Global Thermonuclear War": 100}
 
 while True:
     if tokens<=0:
-        print("Would you like to play a game?")
+        print("Hello, Joshua")
         break
     else:
-            player_choice = input(f"Select a game{games}:").title()
+            player_choice = input(f"Would you like to play a game?{games}:").title()
             if player_choice in games:
                 if tokens >= games[player_choice]:
                     shopping_cart.append(player_choice)
