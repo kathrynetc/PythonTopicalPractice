@@ -12,7 +12,7 @@ while True:
                 if tokens >= games[player_choice]:
                     shopping_cart.append(player_choice)
                     tokens -= games[player_choice]
-                    print(f"Shopping cart: {shopping_cart} \nTokens left: {money}")
+                    print(f"Shopping cart: {shopping_cart} \nTokens left: {tokens}")
                 else:
                     print("Interesting game...the only winning move is not to play.")
             else:
